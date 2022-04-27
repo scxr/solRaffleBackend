@@ -1,0 +1,28 @@
+GET http://localhost:4444/hello
+###
+POST http://localhost:4444/newRaffle
+Content-Type: application/json
+
+{
+    "endTime":1,
+    "startTime":1,
+    "entryPrice":0.01,
+    "maxEntryPP":10,
+    "maxTotal":1111,
+    "nftRaffle":"placeholder"
+}
+
+###
+GET http://localhost:4444/allRaffles
+###
+
+GET http://localhost:4444/allEntries
+###
+POST http://localhost:4444/verifyAccess
+Content-Type: application/json
+
+{
+    "access": "weqwe"
+}
+###
+GET http://localhost:4444/entries/wiFcyioL911DELdmUCCWpCcsmRQL2SaEAUuj4S3kc9k/0
