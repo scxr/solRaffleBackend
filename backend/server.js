@@ -9,7 +9,7 @@ app.use(express.json())
 
 dotenv.config()
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "https://solanaraffles.io",
     methods: ["GET", "POST", "PATCH"]
 }))
 mongoose.connect(process.env.ATLAS_URI, {useNewUrlParser: true})
