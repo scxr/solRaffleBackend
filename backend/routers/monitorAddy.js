@@ -11,7 +11,7 @@ async function main()  {
         "https://summer-black-sun.solana-devnet.quiknode.pro/299eba8a7616239429817a494089b46229c325c8/",
         "confirmed"
     )
-    var pubkey = "FumYkjqdYi6rb3bEKDxEbDMgkUQjRrriucyorA3Z5vTy"
+    var pubkey = "GaMLEpGNRu1ZybYG4srektA9NWXARRVujXLGarTsSGiw"
     var programKey = ""
     async function getTxs(slot, config) {
         let block = await connection.getBlock(slot)

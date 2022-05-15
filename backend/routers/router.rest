@@ -26,3 +26,11 @@ Content-Type: application/json
 }
 ###
 GET http://localhost:4444/entries/wiFcyioL911DELdmUCCWpCcsmRQL2SaEAUuj4S3kc9k/0
+###
+
+GET http://localhost:4444/currentRaffle
+###
+
+GET http://localhost:4444/pastRaffles
+###
+GET http://localhost:4444/test HTTP/1.1

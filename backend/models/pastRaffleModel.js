@@ -1,8 +1,6 @@
 const mongoose = require("mongoose")
-function rndm() {
-    return Math.floor(Math.random() * 1000000)
-}
-const raffleSchema = new mongoose.Schema({
+
+const pastRaffles = new mongoose.Schema({
     startTime: {
         type: Number,
         required: true
@@ -25,8 +23,7 @@ const raffleSchema = new mongoose.Schema({
     },
     raffleNumber: {
         type: Number,
-        required: true,
-        default: rndm
+        required: true
     },
     nftRaffleName: {
         type: String,
@@ -35,7 +32,11 @@ const raffleSchema = new mongoose.Schema({
     nftRaffleImg : {
         type: String,
         required: true
+    },
+    entryNumber: {
+        type: Number,
+        required: true
     }
 })
 
-module.exports = mongoose.model("Raffle", raffleSchema)
+module.exports = mongoose.model("PastRaffles", pastRaffles)
